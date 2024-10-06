@@ -1,5 +1,5 @@
 document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Previene el envío del formulario por defecto
+    event.preventDefault(); 
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
@@ -9,7 +9,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         errorMessage.textContent = "Por favor, complete todos los campos.";
     } else {
         errorMessage.textContent = "";
-        // Aquí puedes agregar la lógica para autenticar al usuario
+        
         alert("Inicio de sesión exitoso");
     }
 });
